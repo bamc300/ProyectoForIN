@@ -1,0 +1,53 @@
+<h1>ESTRUCTURAS NG-FOR Y NG-IF</h1>
+
+<hr>
+
+
+
+<!--Estructura NG IF-->
+<h3>ESTRUCTURA NG-IF </h3>
+<div *ngIf="Condecoracion" class="card text-white bg-dark mb-3" style="max-width: 100rem;">
+    <div class="card-header">{{Titulo}}</div>
+    <div class="card-body">
+        <h5 class="card-title">{{Empleado}}</h5>
+        <p class="card-text">{{Descripcion}}.</p>
+    </div>
+</div>
+<hr>
+
+
+
+
+<!--Estructura NG FOR-->
+<h3>Estructura NG-FOR</h3>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Abellido</th>
+            <th scope="col">Salario</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td *ngFor="let Empleados of Empleado1">{{Empleados}}</td>
+        </tr>
+        <tr>
+            <td *ngFor="let Empleados of Empleado2">{{Empleados}}</td>
+        </tr>
+        <tr>
+            <td *ngFor="let Empleados of Empleado3">{{Empleados}}</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+
+<!--Estructura Nfor en lista-->
+<ul class="list-group">
+    <ul class="list-group">
+        <li *ngFor="let Empleados of Empleado1" class="list-group-item active">
+            {{ Empleados }}</li>
+    </ul>
+</ul>
